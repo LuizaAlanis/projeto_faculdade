@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Contato - CONSERVA-CD</title>
+</head>
+<body>
+        
+    <header>
+        <nav class="grid_nav">
+            <div class="item_nav" id="logo_container">
+                <a href="../index.html"><img src="../assets/Logo.svg" alt=""></a>
+            </div>
+            <div class="item_nav" id="buttons_container">
+                <a href="../sobre_page/index_sobre.html"><button class="nav_btn">Sobre</button></a>
+                <a href="../acoes_page/index_acoes.html"><button class="nav_btn">Ações</button></a>
+                <a href="../mapas_page/index_mapas.html"><button class="nav_btn active">Mapas</button></a>
+                <a href="../agenda_page/index_agenda.html"><button class="nav_btn">Agenda</button></a>
+                <a href="../contato_page/index_contato.html"><button class="nav_btn">Contato</button></a>
+            </div>
+            <div class="item_nav" id="home_container">
+                <a href="/conserva-cd"><button class="home_btn">
+                    <i data-feather="home"></i>
+                </button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contact_container"> 
+        <h2>Gostou da nossa iniciativa e quer saber mais? </h2>
+        <p class ="pr">Envie um e-mail para nós</p> 
+    
+        <form name="input" action="https://formsubmit.co/conserva.cd@gmail.com" method="POST" target="_blank">
+        <table class="Box" id="box">
+            <tr>
+        <td><label > <b>Nome: </b></label> <input type="text" id="nome" name="nome" size="85" required> </td>
+        <td>  </td>
+            </tr>
+            <tr>
+        <td><label><b> E-mail: </b></label> <input type="email" id="email" name="email" size="84" > </td>
+        <td> </td>
+            </tr>
+            <tr>
+        <td><label><b> Telefone: </b></label><input type="tel" id="telefone" name="telefone" size="10"><td>  </td>
+         </td>
+            </tr>
+    </tr>
+    <tr>
+      <td colspan="4"> <label> <b>Mensagem: </b></label>
+    </tr>
+    <p></p>
+    <tr>
+        <td> <textarea placeholder="Deixe sua mensagem aqui.." id="Mensagem" name="mensagem" rows="4" cols="95"></textarea></td>
+    </tr>
+    <tr>
+    <td id="botoes">
+        <input type="submit" value="Enviar" class="botao">
+        <input type="reset" value="Limpar" class="botao"></td>
+    </tr>	
+    </table>
+        <input type="hidden" name="_subject" value="Novo contato!">
+    </form> 
+        </section>
+
+
+    <footer>
+        <section id="creater_container">
+            <p>Criado por Karoline Ribeiro, Daniella Miranda, Victória Avelino e Samuel Xavier ❤</p>
+        </section>
+    </footer>
+
+<script>
+    feather.replace()
+</script>
+<script src="script.js"></script>
+</body>
+</html>
